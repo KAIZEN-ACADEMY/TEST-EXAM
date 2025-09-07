@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TEST EXAM</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <img class="logo" src="./assets/kaizen-logo.jpg" alt="Logo">
+  <h3 class="exam-title">UNIT TEST</h3>
+  <ul>
+    <li>Class - XII</li>
+    <li>Subject - Anthropology</li>
+    <li>Full Marks-100</li>
+  </ul>
+</nav>
+
+<div class="container">
+  <div class="timer-inputs" id="timerInputs">
+    <input type="number" id="hours" placeholder="HH" min="0">
+    <input type="number" id="minutes" placeholder="MM" min="0" max="59">
+    <input type="number" id="seconds" placeholder="SS" min="0" max="59">
+  </div>
+  <button id="startBtn" onclick="startExam()">Conduct Exam</button>
+
+  <div class="countdown" id="countdownDisplay"></div>
+  <div class="goodluck" id="goodluckText">✨ All the Best Students! ✨</div>
+
+  <div class="exam-timer" id="examTimer">00:00:00</div>
+  <div class="question-paper" id="questionPaper">
+    <p>
+    <span style="color: red;">1. Answer the following questions in a sentence or two:(1x5=5)</span><br>
+      (a) Which annual convention of the Indian National Congress did Gandhi visit?<br>
+      (b) Who was Rajkumar Shukla?<br>
+      (c) Who appointed the official commission of inquiry into the indigo sharecropper’s situation?<br>
+      (d) Who is Derek in the chapter Going Places?<br>
+      (e) Where did Sophie and Danny Casey meet?<br>
+    </p>
+    <p>
+    <span style="color: red;">2.Answer the following questions in a sentence or two:</span> <span class="marks">(1x5=5)</span><br>
+      (a) Where were both Sophie and Jansie earmarked to start working after school?<br>
+      (b) What is green war and wars with gas?<br>
+      (c) What is the real name of Pablo Neruda? Where is he from?<br>
+      (d) What should not be confused with total inactivity? Why?<br>
+      (e) For how long did the doctor come to serve in Champaran? What were the medicines available there?<br>
+    </p>
+    <p>
+      3. You are Binit/Binita a student of Kaizen Academy Dhakuwakhana. As the cultural secretary of your school draft a notice to all the students of the <br>school to 
+      come to attend a meeting as you want to discuss about the activities and plan to celebrate the upcoming 2nd October.<span class="5">(5)</span>
+    </p>
+    <p>
+      4. As the principal of Kaizen Academy, Dhakuwakhana, draft an advertisement for the post of an English teacher to be published in a local daily. ,<span> (5) </span>
+    </p>
+  </div>
+
+  <div class="final-screen" id="finalScreen">
+    <h2>⏰ Time Out! Submit your answer sheet.</h2>
+    <ul>
+      <li>Full marks - 100</li>
+      <li>Pass marks - 100</li>
+    </ul>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
